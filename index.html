@@ -6,14 +6,514 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Sass/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 
-
-
 <body>
+
+<header>
+
+
+</header>
+
+    <section id="consumption">
+        <div class="card-consumption">
+            <div class="card-top">
+                <h2><b>Consumption</b></h2>
+                <h4>30 Jan, 2023</h4>
+            </div>
+
+            <div class="card-bottom">
+                <div class="card-reading">
+                    <img src="sass/assets/power.png" alt="">
+                    <div>
+                    <h2><b>48 KWh</b></h2>
+                    <h4>Today</h4>
+                </div>
+                </div>
+
+                <div class="card-reading">
+                    <img src="sass/assets/consumption.png" alt="">
+                    <div>
+                    <h2><b>394 KWh</b></h2>
+                    <h4>This month</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lights">
+        <h2><b>LIGHTS</b></h2>
+        <div>
+            <div class="card-light">
+                <div class="card-inner" id="room1">
+                    <div class="card-off" onclick="switchOn('room1')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>BedRoom 1</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('room1')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>BedRoom 1</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="room2">
+                    <div class="card-off" onclick="switchOn('room2')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>BedRoom 2</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('room2')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>BedRoom 2</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="room3">
+                    <div class="card-off" onclick="switchOn('room3')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>BedRoom 3</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('room3')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>BedRoom 3</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="room4">
+                    <div class="card-off" onclick="switchOn('room4')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>BedRoom 4</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('room4')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>BedRoom 4</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Kitchen">
+                    <div class="card-off" onclick="switchOn('Kitchen')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Kitchen</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Kitchen')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Kitchen</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Garage">
+                    <div class="card-off" onclick="switchOn('Garage')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Garage</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Garage')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Garage</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Bathroom">
+                    <div class="card-off" onclick="switchOn('Bathroom')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Bathroom</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Bathroom')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Bathroom</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Living">
+                    <div class="card-off" onclick="switchOn('Living')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Living Room</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Living')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Living Room</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Dining">
+                    <div class="card-off" onclick="switchOn('Dining')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Dining Room</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Dining')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Dining Room</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Laundry">
+                    <div class="card-off" onclick="switchOn('Laundry')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Laundry Room</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Laundry')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Laundry Room</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Pool">
+                    <div class="card-off" onclick="switchOn('Pool')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Pool</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Pool')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Pool</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Sitting">
+                    <div class="card-off" onclick="switchOn('Sitting')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Sitting Room</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Sitting')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Sitting Room</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Basement">
+                    <div class="card-off" onclick="switchOn('Basement')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Basement</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Basement')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Basement</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Stairs">
+                    <div class="card-off" onclick="switchOn('Stairs')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Stairs</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Stairs')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Stairs</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Study">
+                    <div class="card-off" onclick="switchOn('Study')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Study</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Study')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Study</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-light">
+                <div class="card-inner" id="Hall">
+                    <div class="card-off" onclick="switchOn('Hall')">
+                        <img src="sass/assets/lamp-off.png" alt="Light Off">
+                        <h4><b>Hall</b></h4>
+                        <h3><b>OFF</b></h3>
+                    </div>
+
+                    <div class="card-on" onclick="switchOff('Hall')">
+                        <img src="sass/assets/lamp-on.png" alt="Light On">
+                        <h4><b>Hall</b></h4>
+                        <h3><b>ON</b></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="temperatures">
+        <h2><b>TEMPERATURES</b></h2>
+        <div>
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>BedRoom 1</b></h4>
+                <h3><b>24°</b></h3>
+            </div>
     
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>BedRoom 2</b></h4>
+                <h3><b>25°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>BedRoom 3</b></h4>
+                <h3><b>30°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>BedRoom 4</b></h4>
+                <h3><b>28°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Kitchen</b></h4>
+                <h3><b>26°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Garage</b></h4>
+                <h3><b>25°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>BathRoom</b></h4>
+                <h3><b>24°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Living Room</b></h4>
+                <h3><b>22°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Dining Room</b></h4>
+                <h3><b>28°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Laundry Room</b></h4>
+                <h3><b>25°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Pool</b></h4>
+                <h3><b>18°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Sitting Room</b></h4>
+                <h3><b>24°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Basement</b></h4>
+                <h3><b>24°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Stairs</b></h4>
+                <h3><b>29°</b></h3>
+            </div>
+
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Study</b></h4>
+                <h3><b>27°</b></h3>
+            </div>
+    
+            <div class="card-temperature">
+                <div class="card-icon">
+                    <img src="sass/assets/temperature.png" alt="">
+                    <div class="set-point">
+                        <h4><b>Set</b></h4>
+                        <input type="number" name="tempe" id="tempe" min="15" max="35" step="1" value="24">
+                    </div>
+                </div>
+                <h4><b>Hall</b></h4>
+                <h3><b>22°</b></h3>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
 </body>
+
+<footer>
+    <a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Pixel perfect - Flaticon</a>
+</footer>
+
 </html>
